@@ -82,7 +82,7 @@ h1 {
   transform: scale(1.02);
   color: #111111;
 
-  background: rgba(243, 44, 183, 0.831);
+  background: rgba(240, 134, 208, 0.831);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
