@@ -1,16 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("bg.jpg");
-  background-color: black;
+  background-image: url("2.png");
+  background-color: rgb(17, 17, 17);
   font-weight: 600;
-  color: #ffffff;
+  color: #351d37;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  font-family: Roboto, sans-serif;
+  font-family: Merriweather, sans-serif;
   text-align: center;
 }
 
@@ -29,10 +29,10 @@ header {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 19px;
   margin: 0;
   margin-bottom: 30px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .share-button {
@@ -48,8 +48,11 @@ h1 {
 }
 
 .welcome p {
-  margin: 0 0 15px 0;
+  color: #ffffff;
+  font-style: italic;
+  margin: 0 0 50px 0;
   text-align: center;
+  font-weight: 400;
 }
 
 .container,
@@ -62,35 +65,23 @@ h1 {
 }
 
 .tile {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.956);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  font-weight: 50;
-  color: #111111;
-  margin: 7px;
-  border-radius: 17px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))
+      50% 50% / calc(100% - 12px) calc(100% - 12px) no-repeat,
+    linear-gradient(transparent 74%, #faf1fc 100%);
+  border-radius: 3px;
+  padding: 13px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 16px 8px;
+  margin: 16px 8px;
 }
 
 .tile:hover {
   transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
   transform: scale(1.02);
   color: #111111;
-
-  background: rgba(240, 134, 208, 0.831);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  border: 1px solid rgba(227, 177, 186, 0.3);
 }
 
 .tile:focus {
@@ -108,14 +99,16 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #fcebf3;
+  color: #351d37;
 }
 
 .image-container {
-  height: 110px;
+  height: 100px;
+  width: auto;
+  /*height: 110px;
   width: 110px;
   border-radius: 48px;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 
 .image-container img {
